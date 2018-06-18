@@ -1,0 +1,19 @@
+server:
+  port:8080
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      fail-fast: true
+      server:
+        svn:
+          uri: svn://company.xmiles.cn:1212/StarBaba/shuixin/Server/
+          default-label: trunk
+          username: weiwenrui
+          password: wenruiwei0328
+  profiles:
+    active: subversion
+management:
+  security:
+    enabled: false
