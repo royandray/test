@@ -1,0 +1,14 @@
+server:
+  port:8080
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      fail-fast: true
+      server:
+        svn:
+          uri: http://company.xmiles.cn/StarBaba/shuixin/Server
+          default-label: microservices/config
+          username: weiwenrui
+          password: wenruiwei0328
